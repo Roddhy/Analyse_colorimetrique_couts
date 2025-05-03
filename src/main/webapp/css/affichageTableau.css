@@ -1,0 +1,71 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Fond clair et apaisant */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texte foncé pour la lisibilité */
+}
+
+/* Table de l'historique */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Bordure discrète */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+     /* Couleur d'en-tête bleue */
+    color: #2c3e50;
+    font-size: 12px;
+    text-align: center;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fond gris clair pour les lignes paires */
+}
+
+tr:hover {
+    background-color: #ecf0f1; /* Survol des lignes pour interactivité */
+}
+
+/* Style pour les boutons */
+input[type="submit"], input[type="checkbox"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="checkbox"]:hover {
+    background-color: #2980b9; /* Changement de couleur au survol */
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+
+

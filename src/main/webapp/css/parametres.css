@@ -1,0 +1,100 @@
+/* Style global du corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Fond clair */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Mise en page du titre principal */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Couleur foncée pour le titre */
+    margin-top: 30px;
+}
+
+/* Section principale */
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Style de la section des paramètres de coût */
+#cost-parameters {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis pour une touche moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner de la profondeur */
+}
+
+/* Style pour chaque groupe de champs de formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre chaque élément */
+    max-width: 500px;
+    margin: 0 auto; /* Centrer le formulaire */
+}
+
+/* Style des labels */
+label {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+.succes{
+    font-size: 10px;
+    color: green;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Coins arrondis */
+    width: 100%;
+    box-sizing: border-box; /* Inclure les marges et bordures dans la taille totale */
+}
+
+input[type="number"]:focus {
+    border-color: #3498db; /* Bordure bleue lors du focus */
+    outline: none;
+}
+
+/* Style du bouton de soumission */
+button[type="submit"] {
+    background-color: #3498db; /* Couleur bleue pour le bouton */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation au survol */
+    width: 100%; /* Prendre toute la largeur disponible */
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9; /* Changement de couleur au survol */
+}
+
+/* Espacement de la section */
+.section {
+    margin-top: 20px;
+}
+
+/* Pour les champs de texte d'entrée (valeurs monétaires) */
+input[type="number"]::placeholder {
+    color: #7f8c8d; /* Placeholder gris clair */
+}
+
+/* Style pour les liens et éléments externes */
+a {
+    color: #3498db; /* Lien bleu */
+    text-decoration: none; /* Retirer le soulignement */
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}

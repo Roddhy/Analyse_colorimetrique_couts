@@ -1,0 +1,133 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Fond clair et apaisant */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texte foncé pour la lisibilité */
+}
+
+h1 {
+    color: #2c3e50; /* Titre foncé pour un contraste optimal */
+    text-align: center;
+    margin: 40px auto 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Table de données */
+table {
+    width:100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    overflow: hidden;
+
+        table-layout: fixed;  /* Cela permet de gérer l'ajustement des colonnes */
+        /* Utiliser toute la largeur disponible */
+          /* Assurez-vous que le texte à l'intérieur des cellules est cassé */
+
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Bordure discrète */
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db; /* Couleur d'en-tête bleue */
+    color: white;
+    font-size: 12px;
+}
+
+td {
+    font-size: 13px;
+    color: #555; /* Texte légèrement plus clair */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fond gris clair pour les lignes paires */
+}
+
+tr:hover {
+    background-color: #ecf0f1; /* Survol des lignes pour interactivité */
+    cursor: pointer; /* Indiquer l'interactivité */
+}
+
+/* Style des boutons */
+input[type="submit"], button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #2980b9; /* Couleur légèrement plus sombre au survol */
+    transform: scale(1.05); /* Léger agrandissement */
+}
+
+input[type="submit"]:active, button:active {
+    transform: scale(0.95); /* Léger rétrécissement au clic */
+}
+
+/* Messages */
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+p.error {
+    color: #e74c3c; /* Rouge pour les messages d'erreur */
+}
+
+p.success {
+    color: #27ae60; /* Vert pour les messages de succès */
+}
+
+/* Espacement */
+form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Style des inputs pour histogrammes */
+input[type="submit"][title="Basculer sous forme d'histogramme"] {
+    background-color: #2ecc71; /* Couleur verte */
+}
+
+input[type="submit"][title="Basculer sous forme d'histogramme"]:hover {
+    background-color: #27ae60; /* Vert plus foncé au survol */
+}
+.btn{
+   text-align: center;
+   padding: 25px;
+    margin-top: -12px;
+}
+.btn a {
+    padding: 10px 20px;
+    background-color: #3498db; /* Bleu vibrant pour l'action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    background-color: #2980b9; /* Changement de couleur au survol */
+}

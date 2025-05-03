@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="Hello-EJB-JPA-Payara" transaction-type="JTA">
+        <jta-data-source>jdbc/mylocal_mysql</jta-data-source>
+        <properties>
+            <property name="jakarta.persistance.schema-
+generation.database.action" value="drop-and-create"/>
+            <property name="jakarta.persistance.sql-load-script-source"
+                      value="META-INF/defaultdata.sql"/>
+            <property name="eclipselink.logging.level" value="FINEST"/>
+            <property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+        </properties>
+    </persistence-unit>
+</persistence>
